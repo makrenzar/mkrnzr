@@ -1,14 +1,9 @@
-import Header from "../components/Header";
-
-function Home (){
-    return<>
-    <Header></Header>
-    <section className="bg-black">
-        <div>
-
-        </div>
-    </section>
+function Home() {
+  return (
+    <>
+      <p>UNDER DEVELOP</p>
     </>
+  );
 }
 
 export default Home;
