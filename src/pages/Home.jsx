@@ -8,9 +8,9 @@ function Home() {
         <div className="max-w-[1100px] w-full">
           <Header />
           <p className="mb-10 px-8 py-10 text-center">UNDER DEVELOPMENT</p>
-          <Footer />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
