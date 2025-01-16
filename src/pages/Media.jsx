@@ -63,14 +63,14 @@ function Media() {
   return (
     <>
       <div className="min-h-screen px-8 py-10 flex justify-center">
-        <div className="max-w-[1170px] w-full">
+        <div className="max-w-[1170px] w-full ">
           <Header />
-          <p className="text-sm text-center mb-10">
+          <p className="text-sm text-center mb-10 animate-slideFromDownAndFade [animation-delay:var(--animation-delay)]">
             A collection of projects, designs, photos, and experiments from
             recent years.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[5px] justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[5px] justify-center animate-slideFromDownAndFade [animation-delay:var(--animation-delay)]">
             {images.map((image, index) => (
               <div
                 key={index}
