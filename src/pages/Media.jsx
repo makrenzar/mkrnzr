@@ -12,6 +12,7 @@ const images = [
     className:
       "w-[286px] h-[300px] object-cover rounded-md border border-[#232326]",
     sizeClass: "w-[500px] h-[400px]",
+    caption: "Social Hub Agency 2024"
   },
   {
     src: image3,
@@ -19,21 +20,16 @@ const images = [
     className:
       "w-[286px] h-[300px] object-cover rounded-md border border-[#232326]",
     sizeClass: "w-[500px] h-[400px]",
+    caption: "Stephen's Portfolio 2024"
   },
   {
     src: image4,
     alt: "Vincent's Portfolio",
     className:
       "w-[286px] h-[300px] object-cover rounded-md border border-[#232326]",
-    sizeClass: "w-[500px] h-[400px]",
-  },
-  {
-    src: image4,
-    alt: "Vincent's Portfolio",
-    className:
-      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326]",
-    sizeClass: "w-[500px] h-[400px]",
-  },
+    sizeClass: "w-[500px] h-[400px] ",
+    caption: "Vincent's Portfolio 2024"
+  }
 ];
 
 function Media() {
@@ -63,7 +59,7 @@ function Media() {
   return (
     <>
       <div className="min-h-screen px-8 py-10 flex justify-center">
-        <div className="max-w-[1170px] w-full ">
+        <div className="max-w-[1170px] w-full">
           <Header />
           <p className="text-sm text-center mb-10 animate-slideFromDownAndFade [animation-delay:var(--animation-delay)]">
             A collection of projects, designs, photos, and experiments from
@@ -90,10 +86,10 @@ function Media() {
 
           {selectedImage && (
             <div
-              className="fixed inset-0 bg-black bg-opacity-10 backdrop-blur-sm flex items-center justify-center z-50"
+              className="fixed inset-0 bg-black bg-opacity-10 backdrop-blur-md flex items-center justify-center z-50"
               onClick={handleClickOutside}
             >
-              <div className="relative">
+              <div className="relative flex flex-col items-center">
                 <img
                   src={selectedImage.src}
                   alt="Enlarged view"
@@ -101,15 +97,15 @@ function Media() {
                   loading="lazy"
                   decoding="async"
                 />
+                <p className="text-sm mt-4">{selectedImage.caption}</p>
               </div>
 
               <p
-                className="absolute bottom-24 text-sm px-2 py-1 cursor-pointer bg-[#515151] rounded-md border border-[#808080]"
+                className="absolute bottom-48 text-sm px-2 py-1 cursor-pointer bg-[#515151] rounded-md border border-[#808080] text-white"
                 onClick={handleClose}
               >
                 ESC
               </p>
-              {/* <p className="absolute bottom-60 text-sm  ">ON GOING</p> */}
             </div>
           )}
         </div>

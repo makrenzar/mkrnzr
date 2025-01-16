@@ -84,16 +84,16 @@ function Home() {
               </a>
               , explore my
               <a
-                href="https://read.cv/ibelick"
+                href="https://read.cv/makrenzar"
                 target="_blank"
                 class="text-[#f8f8f8] hover:underline ease-in duration-300"
                 rel="noopener noreferrer"
               >
-                &nbsp;Read.cv
+                &nbsp;Readcv
               </a>
               &nbsp;profile, connect with me on
               <a
-                href="https://facebook.com/ibelick"
+                href="https://facebook.com/makrenzar1"
                 target="_blank"
                 class=" text-[#f8f8f8] hover:underline ease-in duration-300"
                 rel="noopener noreferrer"
