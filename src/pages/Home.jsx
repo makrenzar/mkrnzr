@@ -50,6 +50,8 @@ function Home() {
             </p>
           </div>
 
+
+
           <div className="mt-16 animate-slideFromDownAndFade [animation-delay:calc(var(--animation-delay)*2)]">
             <h2 className="h2 mb-4 text-sm">Now</h2>
             <p className="mb-2 para text-sm leading-6">

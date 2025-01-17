@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import image2 from "../assets/sha.jpg";
-import image3 from "../assets/sjj.jpg";
-import image4 from "../assets/va.jpg";
+import image2 from "../assets/sha.png";
+import image3 from "../assets/sjj.png";
+import image4 from "../assets/va.png";
+import image5 from "../assets/nv.png";
+import image6 from "../assets/cbc.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -10,25 +12,41 @@ const images = [
     src: image2,
     alt: "Social Hub Agency",
     className:
-      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326]",
-    sizeClass: "w-[500px] h-[400px]",
+      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
+    sizeClass: "lg:w-[500px] lg:h-[500px]",
     caption: "Social Hub Agency 2024"
   },
   {
     src: image3,
     alt: "Stephen's Portfolio",
     className:
-      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326]",
-    sizeClass: "w-[500px] h-[400px]",
+      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
+    sizeClass: "lg:w-[400px] lg:h-[400px]",
     caption: "Stephen's Portfolio 2024"
   },
   {
     src: image4,
     alt: "Vincent's Portfolio",
     className:
-      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326]",
-    sizeClass: "w-[500px] h-[400px] ",
+      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
+    sizeClass: "lg:w-[400px] lg:h-[600px] ",
     caption: "Vincent's Portfolio 2024"
+  },
+  {
+    src: image5,
+    alt: "Navigation Bar",
+    className:
+      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
+    sizeClass: "w-[300px] h-[300px] ",
+    caption: "Navigation Bar"
+  },
+  {
+    src: image6,
+    alt: "Caile's Brew Co. Logo 2023",
+    className:
+      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
+    sizeClass: "lg:w-[300px] lg:h-[400px] ",
+    caption: "Navigation Bar"
   }
 ];
 
@@ -93,19 +111,20 @@ function Media() {
                 <img
                   src={selectedImage.src}
                   alt="Enlarged view"
-                  className={`rounded-lg ${selectedImage.sizeClass}`}
+                  className={`rounded-lg w-[380px] h-[280px]  ${selectedImage.sizeClass}`}
                   loading="lazy"
                   decoding="async"
                 />
                 <p className="text-sm mt-4">{selectedImage.caption}</p>
-              </div>
-
+                
               <p
-                className="absolute bottom-48 text-sm px-2 py-1 cursor-pointer bg-[#515151] rounded-md border border-[#808080] text-white"
+                className="mt-4 text-sm px-2 py-1 cursor-pointer bg-[#515151] rounded-md border border-[#808080] text-white"
                 onClick={handleClose}
               >
                 ESC
               </p>
+              </div>
+
             </div>
           )}
         </div>
