@@ -14,7 +14,8 @@ const images = [
     className:
       "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
     sizeClass: "lg:w-[500px] lg:h-[500px]",
-    caption: "Social Hub Agency 2024"
+    caption: "Social Hub Agency 2024",
+    url: "https://socialhubagency.vercel.app/",
   },
   {
     src: image3,
@@ -22,7 +23,8 @@ const images = [
     className:
       "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
     sizeClass: "lg:w-[400px] lg:h-[400px]",
-    caption: "Stephen's Portfolio 2024"
+    caption: "Stephen's Portfolio 2024",
+    url: "https://stephenjoshua.vercel.app/",
   },
   {
     src: image4,
@@ -30,7 +32,8 @@ const images = [
     className:
       "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
     sizeClass: "lg:w-[400px] lg:h-[600px] ",
-    caption: "Vincent's Portfolio 2024"
+    caption: "Vincent's Portfolio 2024",
+    url: "https://vinzent.vercel.app/",
   },
   {
     src: image5,
@@ -38,16 +41,15 @@ const images = [
     className:
       "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
     sizeClass: "w-[300px] h-[300px] ",
-    caption: "Navigation Bar"
+    caption: "Navigation Bar",
   },
   {
     src: image6,
     alt: "Caile's Brew Co. Logo 2023",
-    className:
-      "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
-    sizeClass: "lg:w-[450px] lg:h-[400px] ",
-    caption: "Caile's Brew Co. Logo 2023"
-  }
+    className: "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
+    sizeClass: "lg:w-[450px] lg:h-[400px]",
+    caption: "Caile's Brew Co. Logo 2023",
+  },
 ];
 
 function Media() {
@@ -111,20 +113,30 @@ function Media() {
                 <img
                   src={selectedImage.src}
                   alt="Enlarged view"
-                  className={`rounded-lg w-[380px] h-[280px]  ${selectedImage.sizeClass}`}
+                  className={`rounded-lg w-[380px] h-[280px] ${selectedImage.sizeClass}`}
                   loading="lazy"
                   decoding="async"
                 />
-                <p className="text-sm mt-4">{selectedImage.caption}</p>
-                
-              <p
-                className="mt-4 text-sm px-2 py-1 cursor-pointer bg-[#515151] rounded-md border border-[#808080] text-white"
-                onClick={handleClose}
-              >
-                ESC
-              </p>
+                <p className="text-sm mt-4 ">
+                  {selectedImage.caption}{" "}
+                  {selectedImage.url && (
+                    <a
+                      href={selectedImage.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className=" underline"
+                    >
+                      Link
+                    </a>
+                  )}
+                </p>
+                <p
+                  className="mt-4 text-sm px-2 py-1 cursor-pointer bg-[#515151] rounded-md border border-[#808080] "
+                  onClick={handleClose}
+                >
+                  ESC
+                </p>
               </div>
-
             </div>
           )}
         </div>
