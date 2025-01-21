@@ -45,8 +45,8 @@ const images = [
     alt: "Caile's Brew Co. Logo 2023",
     className:
       "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
-    sizeClass: "lg:w-[300px] lg:h-[400px] ",
-    caption: "Navigation Bar"
+    sizeClass: "lg:w-[450px] lg:h-[400px] ",
+    caption: "Caile's Brew Co. Logo 2023"
   }
 ];
 
@@ -104,7 +104,7 @@ function Media() {
 
           {selectedImage && (
             <div
-              className="fixed inset-0 bg-black bg-opacity-10 backdrop-blur-md flex items-center justify-center z-50"
+              className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-lg flex items-center justify-center z-50"
               onClick={handleClickOutside}
             >
               <div className="relative flex flex-col items-center">

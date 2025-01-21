@@ -53,9 +53,9 @@ function Home() {
 
 
           <div className="mt-16 animate-slideFromDownAndFade [animation-delay:calc(var(--animation-delay)*2)]">
-            <h2 className="h2 mb-4 text-sm">Now</h2>
+            <h2 className="h2 mb-4 text-sm">Experience</h2>
             <p className="mb-2 para text-sm leading-6">
-              Currently working as a Frontend Developer at
+               Frontend Developer at
               <span className="text-[#f8f8f8]">
                 &nbsp;Blaqbox Technology Corporation
               </span>
