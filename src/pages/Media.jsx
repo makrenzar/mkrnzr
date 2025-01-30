@@ -14,7 +14,7 @@ const images = [
     className:
       "w-[286px] h-[300px] object-cover rounded-md border border-[#232326] para",
     sizeClass: "lg:w-[500px] lg:h-[500px]",
-    caption: "Social Hub Agency 2024",
+    caption: "Landing page design for Social Hub Agency,",
     url: "https://socialhubagency.vercel.app/",
   },
   {
