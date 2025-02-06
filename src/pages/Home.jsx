@@ -36,8 +36,8 @@ function Home() {
               <h1 className="h1 mb-0.5 text-sm">
                 <a href="/">Mark Lawrence Zaragoza</a>
               </h1>
-              <p className="text-sm group relative inline-flex items-center justify-center overflow-hidden transition">
-                <span>Iloilo City, Philippines</span>
+              <p className="para text-sm group relative inline-flex items-center justify-center overflow-hidden transition">
+                <span>Iloilo City, Philippines 5000</span>
               </p>
             </div>
           </div>
