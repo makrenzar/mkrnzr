@@ -37,12 +37,12 @@ function Home() {
                 <a href="/">Mark Lawrence Zaragoza</a>
               </h1>
               <p className="text-sm group relative inline-flex items-center justify-center overflow-hidden transition">
-                <span>Frontend Developer</span>
+                <span>Iloilo City, Philippines</span>
               </p>
             </div>
           </div>
           <div className=" animate-slideFromDownAndFade [animation-delay:var(--animation-delay)]">
-            <h2 className=" h2 mb-4 text-sm">About me</h2>
+            <h2 className=" h2 mb-4 text-sm">Frontend Developer</h2>
             <p className=" mb-2 text-sm para leading-6">
               Passionate about creating innovative and user-friendly websites. I
               focus on building engaging experiences that look great and perform
